@@ -56,8 +56,11 @@ ol {
 
 .visually-hidden {
   inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .content {
@@ -108,6 +111,10 @@ ol {
 }
 
 .search-form__label {
+  display: inline-flex;
+  align-items: center;
+  /* column-gap: 5px; */
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   cursor: pointer;
